@@ -1,31 +1,37 @@
 plugins {
     id 'java'
-    id 'com.github.johnrengelman.shadow' version '8.1.1'
+    id 'idea'
+    id 'com.github.johnrengelman.shadow' version '8.1+'
 }
 
-group = 'fr.holo795'
+group = 'com.st0x0ef.wonskill'
 version = '1.0'
 
 repositories {
     mavenCentral()
     maven {
-        name = "papermc-repo"
-        url = "https://repo.papermc.io/repository/maven-public/"
+        name = "spigotmc-repo"
+        url = "https://hub.spigotmc.org/nexus/content/repositories/snapshots/"
     }
     maven {
         name = "sonatype"
         url = "https://oss.sonatype.org/content/groups/public/"
     }
+    maven {
+        name = "andross-repo"
+        url = "https://repo.andross.fr/"
+    }
 }
 
 dependencies {
-    compileOnly "io.papermc.paper:paper-api:1.18.2-R0.1-SNAPSHOT"
-
-    implementation 'com.fasterxml.jackson.core:jackson-databind:2.8.+'
-    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.8.+'
-
-    compileOnly 'org.projectlombok:lombok:1.18.28'
+    implementation 'org.projectlombok:lombok:1.18.26'
     annotationProcessor 'org.projectlombok:lombok:1.18.28'
+
+    implementation 'fr.andross.banitem:BanItemPlugin:3.4'
+
+    implementation 'org.jetbrains:annotations:24.0.0'
+
+    compileOnly "org.spigotmc:spigot-api:1.18.2-R0.1-SNAPSHOT"
 }
 
 def targetJavaVersion = 17
