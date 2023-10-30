@@ -1,0 +1,11 @@
+types:
+  - mineur
+  - agriculteur
+  - bucheron
+  - armurier
+  - explorateur
+  - ingenieur
+
+mineur:
+  permissions:
+    - banitem

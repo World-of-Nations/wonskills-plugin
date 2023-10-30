@@ -1,0 +1,17 @@
+name: WonSkill
+version: '${version}'
+main: com.st0x0ef.wonskill.WonSkill
+api-version: '1.18'
+
+depend:
+  - BanItem
+
+description: Plugin of skills for WoN
+
+commands:
+  skills:
+    description: See the number of xp/competencies points
+    usage: /<command>
+  skill:
+    description: Set the number of xp/competencies points (staff only)
+    usage: /<command>
