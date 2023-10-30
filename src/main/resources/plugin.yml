@@ -1,4 +1,0 @@
-name: WonSkill
-version: '${version}'
-main: fr.holo795.wonskill.WonSkill
-api-version: '1.18'
